@@ -3,7 +3,7 @@
 - 🌍  I'm computer engineer and software development passionate based on Turkey.
 - 🔭  I’m currently working at [Hazelcast Cloud](https://cloud.hazelcast.com)
 - 👯  I’m looking to collaborate on open-source projects!
-- 🌱  I’m currently learning AWS, Golang and Serverless.
+- 🌱  I’m currently learning .NET Core, Golang and Serverless.
 - 😄  Pronouns: he/him
 - ⚡   Fun fact: Scheduled Github Actions never works on time 
 
