@@ -17,17 +17,17 @@
 
 ## ⭐️ Technologies I like
 <p align="left">
-<img src="https://github.com/PKief/vscode-material-icon-theme/blob/master/icons/go_gopher.svg" alt="golang" width="25" height="25" />
-<img src="https://github.com/PKief/vscode-material-icon-theme/blob/master/icons/nodejs_alt.svg" alt="nodejs" width="25" height="25" />
-<img src="https://github.com/PKief/vscode-material-icon-theme/blob/master/icons/typescript.svg" alt="typescript" width="25" height="25" />
-<img src="https://github.com/PKief/vscode-material-icon-theme/blob/master/icons/kotlin.svg" alt="kotlin" width="25" height="25" />
-<img src="https://github.com/PKief/vscode-material-icon-theme/blob/master/icons/python.svg" alt="python" width="25" height="25" />
-<img src="https://github.com/PKief/vscode-material-icon-theme/blob/master/icons/docker.svg" alt="docker" width="25" height="25" />
-<img src="https://github.com/PKief/vscode-material-icon-theme/blob/master/icons/folder-kubernetes.svg" alt="kubernetes" width="25" height="25" />
-<img src="https://github.com/PKief/vscode-material-icon-theme/blob/master/icons/graphql.svg" alt="graphql" width="25" height="25" />
-<img src="https://github.com/PKief/vscode-material-icon-theme/blob/master/icons/angular.svg" alt="angular" width="25" height="25" />
-<img src="https://github.com/PKief/vscode-material-icon-theme/blob/master/icons/django.svg" alt="django" width="25" height="25" />
-<img src="https://github.com/PKief/vscode-material-icon-theme/blob/master/icons/android.svg" alt="android" width="25" height="25" />
+<img src="https://github.com/PKief/vscode-material-icon-theme/blob/main/icons/go_gopher.svg" alt="golang" width="25" height="25" />
+<img src="https://github.com/PKief/vscode-material-icon-theme/blob/main/icons/nodejs_alt.svg" alt="nodejs" width="25" height="25" />
+<img src="https://github.com/PKief/vscode-material-icon-theme/blob/main/icons/typescript.svg" alt="typescript" width="25" height="25" />
+<img src="https://github.com/PKief/vscode-material-icon-theme/blob/main/icons/kotlin.svg" alt="kotlin" width="25" height="25" />
+<img src="https://github.com/PKief/vscode-material-icon-theme/blob/main/icons/python.svg" alt="python" width="25" height="25" />
+<img src="https://github.com/PKief/vscode-material-icon-theme/blob/main/icons/docker.svg" alt="docker" width="25" height="25" />
+<img src="https://github.com/PKief/vscode-material-icon-theme/blob/main/icons/folder-kubernetes.svg" alt="kubernetes" width="25" height="25" />
+<img src="https://github.com/PKief/vscode-material-icon-theme/blob/main/icons/graphql.svg" alt="graphql" width="25" height="25" />
+<img src="https://github.com/PKief/vscode-material-icon-theme/blob/main/icons/angular.svg" alt="angular" width="25" height="25" />
+<img src="https://github.com/PKief/vscode-material-icon-theme/blob/main/icons/django.svg" alt="django" width="25" height="25" />
+<img src="https://github.com/PKief/vscode-material-icon-theme/blob/main/icons/android.svg" alt="android" width="25" height="25" />
 
 ## 📌 Contact
 Feel free to contact me about anything I can help or collaborate on projects!<br>
