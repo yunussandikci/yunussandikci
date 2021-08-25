@@ -30,20 +30,23 @@ tar -xzvf kubectx_v0.9.4_linux_x86_64.tar.gz
 tar -xzvf kubens_v0.9.4_linux_x86_64.tar.gz
 mv kubectx /usr/local/bin/kubectx
 mv kubens /usr/local/bin/kubens
-rm kubectx_v0.9.4_linux_x86_64.tar.gz
-rm kubens_v0.9.4_linux_x86_64.tar.gz
-rm LICENSE
+rm kubectx_v0.9.4_linux_x86_64.tar.gz kubens_v0.9.4_linux_x86_64.tar.gz LICENSE
 
 # Install Helm
 wget https://get.helm.sh/helm-v3.6.2-linux-amd64.tar.gz
 tar -xzvf helm-v3.6.2-linux-amd64.tar.gz
 mv linux-amd64/helm /usr/local/bin/helm
-rm -rf linux-amd64
-rm helm-v3.6.2-linux-amd64.tar.gz
+rm -rf helm-v3.6.2-linux-amd64.tar.gz linux-amd64
 
 # Install Kubectl Aliases
 wget https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases
 echo "[ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases" >> .zshrc
+
+# Install AWS CLI
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+rm -rf aws awscliv2.zip
 
 # Git Global Config
 git config --global core.autocrlf false
