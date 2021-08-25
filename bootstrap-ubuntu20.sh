@@ -1,3 +1,9 @@
+export GO_VERSION="1.17"
+export JAVA_VERSION="8.0.292.j9-adpt"
+export KUBECTX_VERSION="0.9.4"
+export KUBENS_VERSION="0.9.4"
+export HELM_VERSION="3.6.2"
+
 sudo apt update
 sudo apt install zsh htop nano zip unzip curl wget python3-pip git
 
@@ -11,32 +17,37 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
 # Install Golang
-wget https://golang.org/dl/go1.17.linux-amd64.tar.gz
-tar -xzvf go1.17.linux-amd64.tar.gz
+wget https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz
+tar -xzvf go${GO_VERSION}.linux-amd64.tar.gz
 mv go /usr/local/go
-rm go1.17.linux-amd64.tar.gz
+rm go${GO_VERSION}.linux-amd64.tar.gz
 echo "GOROOT=/usr/local/go" >> .zshrc
 echo "export PATH=$PATH:$GOROOT/bin" >> .zshrc
 
-# Install Java 1.8
+# Install Java
 curl -s "https://get.sdkman.io" | bash
-sdk install java 8.0.292.j9-adpt
+sdk install java ${JAVA_VERSION}
 sdk install maven
 
+# Install Kubectl
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+rm -rf kubectl
+
 # Install Kubectx and Kubens
-wget https://github.com/ahmetb/kubectx/releases/download/v0.9.4/kubectx_v0.9.4_linux_x86_64.tar.gz
-wget https://github.com/ahmetb/kubectx/releases/download/v0.9.4/kubens_v0.9.4_linux_x86_64.tar.gz
-tar -xzvf kubectx_v0.9.4_linux_x86_64.tar.gz
-tar -xzvf kubens_v0.9.4_linux_x86_64.tar.gz
+wget https://github.com/ahmetb/kubectx/releases/download/v${KUBECTX_VERSION}/kubectx_v${KUBECTX_VERSION}_linux_x86_64.tar.gz
+wget https://github.com/ahmetb/kubectx/releases/download/v${KUBENS_VERSION}/kubens_v${KUBENS_VERSION}_linux_x86_64.tar.gz
+tar -xzvf kubectx_v${KUBECTX_VERSION}_linux_x86_64.tar.gz
+tar -xzvf kubens_v${KUBENS_VERSION}_linux_x86_64.tar.gz
 mv kubectx /usr/local/bin/kubectx
 mv kubens /usr/local/bin/kubens
-rm kubectx_v0.9.4_linux_x86_64.tar.gz kubens_v0.9.4_linux_x86_64.tar.gz LICENSE
+rm kubectx_v${KUBECTX_VERSION}_linux_x86_64.tar.gz kubens_${KUBENS_VERSION}_linux_x86_64.tar.gz LICENSE
 
-# Install Helm
-wget https://get.helm.sh/helm-v3.6.2-linux-amd64.tar.gz
-tar -xzvf helm-v3.6.2-linux-amd64.tar.gz
+# Install Helme
+wget https://get.helm.sh/helm-v${HELM_VERSION}-linux-amd64.tar.gz
+tar -xzvf helm-v${HELM_VERSION}-linux-amd64.tar.gz
 mv linux-amd64/helm /usr/local/bin/helm
-rm -rf helm-v3.6.2-linux-amd64.tar.gz linux-amd64
+rm -rf helm-v${HELM_VERSION}-linux-amd64.tar.gz linux-amd64
 
 # Install Kubectl Aliases
 wget https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases
