@@ -1,7 +1,7 @@
 # Main Utils
 sudo apt update
 sudo apt upgrade
-sudo apt install zsh htop nano zip unzip curl wget python3-pip git jq
+sudo apt install zsh htop nano zip unzip curl wget python3-pip git jq espeak
 
 # Install Pip Tools
 sudo pip install ansible virtualenv gitman
