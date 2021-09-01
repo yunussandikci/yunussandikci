@@ -23,8 +23,6 @@ sudo apt-get install network-manager-l2tp-gnome
 
 # Install OhMyZsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git config --global --add oh-my-zsh.hide-status 1
-git config --global --add oh-my-zsh.hide-dirty 1
 
 # Install Fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
