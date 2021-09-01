@@ -8,10 +8,14 @@ sudo pip install ansible virtualenv gitman
 
 # Snaps
 sudo snap install flock-chat
+sudo snap install spotify
+sudo snap install skype
+sudo snap install clickup
+sudo snap install bitwarden
 sudo snap install slack --classic
 sudo snap install code --classic
-sudo snap install spotify
-sudo snap install clickup
+sudo snap install pycharm-professional --classic
+sudo snap install goland --classic
 
 # L2TP
 sudo apt-get install network-manager-l2tp
