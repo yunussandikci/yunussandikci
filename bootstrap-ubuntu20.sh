@@ -3,6 +3,9 @@ sudo apt update
 sudo apt upgrade
 sudo apt install zsh htop nano zip unzip curl wget python3-pip git jq
 
+# Install Pip Tools
+sudo pip install ansible virtualenv gitman
+
 # Snaps
 sudo snap install flock-chat
 sudo snap install slack --classic
@@ -67,12 +70,6 @@ unzip awscliv2.zip
 sudo ./aws/install
 rm -rf aws awscliv2.zip
 
-# Install Ansible
-sudo pip install ansible
-
-# Install VirtualEnv
-sudo pip install virtualenv
-
 # Install Docker
 sudo apt install apt-transport-https ca-certificates curl gnupg lsb-release
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -82,3 +79,14 @@ sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io
 sudo usermod -aG docker $USER
 sudo chmod 666 /var/run/docker.sock
+
+# Install Kind
+curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.11.1/kind-linux-amd64
+chmod +x ./kind
+sudo mv kind /usr/local/bin/kind
+
+# Install Mkcert
+wget https://github.com/FiloSottile/mkcert/releases/download/v1.4.3/mkcert-v1.4.3-linux-amd64
+sudo cp mkcert-v1.4.3-linux-amd64 /usr/local/bin/mkcert
+sudo chmod +x /usr/local/bin/mkcert
+rm -rf mkcert-v1.4.3-linux-amd64
