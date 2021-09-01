@@ -1,5 +1,4 @@
-
-
+# Main Utils
 sudo apt update
 sudo apt upgrade
 sudo apt install zsh htop nano zip unzip curl wget python3-pip git jq
@@ -81,6 +80,5 @@ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] 
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io
-
-# Git Global Config
-git config --global core.autocrlf false
+sudo usermod -aG docker $USER
+sudo chmod 666 /var/run/docker.sock
