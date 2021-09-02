@@ -1,7 +1,7 @@
 # Main Utils
 sudo apt update
 sudo apt upgrade
-sudo apt install zsh htop nano zip unzip curl wget python3-pip git jq espeak libmysqlclient-dev vim gnome-tweak-tool 
+sudo apt install zsh htop nano zip unzip curl wget python3-pip git jq espeak libmysqlclient-dev libmariadbclient-dev vim gnome-tweak-tool 
 
 # Drivers
 ubuntu-drivers devices
