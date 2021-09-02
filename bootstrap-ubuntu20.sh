@@ -7,9 +7,6 @@ sudo apt install zsh htop nano zip unzip curl wget python3-pip git jq espeak vim
 ubuntu-drivers devices
 sudo ubuntu-drivers autoinstall
 
-# Install Pip Tools
-sudo pip install ansible virtualenv gitman
-
 # Snaps
 sudo snap install flock-chat
 sudo snap install spotify
@@ -39,6 +36,14 @@ sudo mv go /usr/local/go
 rm go1.17.linux-amd64.tar.gz
 echo "GOROOT=/usr/local/go" >> .zshrc
 echo "export PATH=$PATH:$GOROOT/bin" >> .zshrc
+
+# Install Python
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get update
+sudo apt-get install python3.6
+
+# Install Pip Tools
+sudo pip install ansible virtualenv gitman
 
 # Install Kubectl
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
