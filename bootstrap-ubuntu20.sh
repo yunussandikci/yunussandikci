@@ -96,3 +96,7 @@ wget https://github.com/FiloSottile/mkcert/releases/download/v1.4.3/mkcert-v1.4.
 sudo cp mkcert-v1.4.3-linux-amd64 /usr/local/bin/mkcert
 sudo chmod +x /usr/local/bin/mkcert
 rm -rf mkcert-v1.4.3-linux-amd64
+
+# Install Stern
+wget https://github.com/wercker/stern/releases/download/1.11.0/stern_linux_amd64
+sudo mv stern_linux_amd64 /usr/local/bin/stern
