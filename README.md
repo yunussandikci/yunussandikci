@@ -1,7 +1,7 @@
 
 ## 👋 Hi there, I'm Yunus.
 - 🌍  I'm computer engineer and software development passionate based on Turkey.
-- 🔭  I’m currently working at [Hazelcast Cloud](https://cloud.hazelcast.com)
+- 🔭  I’m currently working at [Namecheap](https://www.namecheap.com)
 - 👯  I’m looking to collaborate on open-source projects!
 - 🌱  I’m currently learning .NET Core, Golang and Serverless.
 - 😄  Pronouns: he/him
