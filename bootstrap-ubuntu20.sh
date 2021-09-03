@@ -1,7 +1,7 @@
 # Main Utils
 sudo apt -y update
 sudo apt -y upgrade
-sudo apt -y install zsh htop nano zip unzip curl wget git jq espeak python3-pip vim gnome-tweak-tool 
+sudo apt -y install zsh htop nano zip unzip curl wget git jq python3-pip espeak conntrack sshfs vim gnome-tweak-tool 
 
 # Drivers
 ubuntu-drivers devices
@@ -108,3 +108,9 @@ rm -rf mkcert-v1.4.3-linux-amd64
 wget https://github.com/wercker/stern/releases/download/1.11.0/stern_linux_amd64
 sudo mv stern_linux_amd64 /usr/local/bin/stern
 chmod +x /usr/local/bin/stern
+
+# Install Telepresence
+wget https://s3.amazonaws.com/datawire-static-files/telepresence/telepresence-0.109.tar.gz
+tar -xzvf telepresence-0.109.tar.gz
+sudo mv telepresence-0.109/bin/telepresence /usr/local/bin/telepresence
+rm -rf telepresence*
