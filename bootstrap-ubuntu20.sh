@@ -1,7 +1,7 @@
 # Main Utils
 sudo apt -y update
 sudo apt -y upgrade
-sudo apt -y install zsh htop nano zip unzip curl wget git jq python3-pip espeak conntrack sshfs vim gnome-tweak-tool 
+sudo apt -y install zsh htop nano zip unzip curl wget git jq python3-pip espeak conntrack sshfs libnss3-tools vim gnome-tweak-tool 
 
 # Drivers
 ubuntu-drivers devices
