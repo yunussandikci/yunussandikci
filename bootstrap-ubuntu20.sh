@@ -15,6 +15,7 @@ sudo snap install clickup
 sudo snap install bitwarden
 sudo snap install zoom-client
 sudo snap install termius-app
+sudo snap install libreoffice
 sudo snap install slack --classic
 sudo snap install code --classic
 sudo snap install pycharm-professional --classic
