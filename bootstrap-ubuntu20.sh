@@ -37,7 +37,7 @@ wget https://golang.org/dl/go1.17.linux-amd64.tar.gz
 tar -xzvf go1.17.linux-amd64.tar.gz
 sudo mv go /usr/local/go
 rm go1.17.linux-amd64.tar.gz
-echo "GOROOT=/usr/local/go" >> .zshrc
+echo "export GOROOT=/usr/local/go" >> .zshrc
 echo "export PATH=\$PATH:\$GOROOT/bin" >> .zshrc
 
 # Install Pip Tools
@@ -49,7 +49,7 @@ sudo apt update
 sudo apt install -y python3.6 python3.6-dev
 
 # Install Kubectl
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+wget "https://storage.googleapis.com/kubernetes-release/release/v1.15.11/bin/linux/amd64/kubectl"
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 rm -rf kubectl
 
