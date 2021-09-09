@@ -118,3 +118,13 @@ wget https://s3.amazonaws.com/datawire-static-files/telepresence/telepresence-0.
 tar -xzvf telepresence-0.109.tar.gz
 sudo mv telepresence-0.109/bin/telepresence /usr/local/bin/telepresence
 rm -rf telepresence*
+
+# Switch to Pipewire
+sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream
+sudo apt update
+sudo apt install pipewire libspa-0.2-bluetooth pipewire-audio-client-libraries
+systemctl --user daemon-reload
+systemctl --user --now disable pulseaudio.service pulseaudio.socket
+systemctl --user mask pulseaudio
+systemctl --user --now enable pipewire-media-session.service
+systemctl --user restart pipewire
