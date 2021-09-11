@@ -19,6 +19,7 @@ sudo snap install libreoffice
 sudo snap install postman
 sudo snap install notion-snap
 sudo snap install whatsdesk
+sudo snap install fluent-reader --beta
 sudo snap install slack --classic
 sudo snap install code --classic
 sudo snap install pycharm-professional --classic
