@@ -44,7 +44,7 @@ echo "export GOROOT=/usr/local/go" >> .zshrc
 echo "export PATH=\$PATH:\$GOROOT/bin" >> .zshrc
 
 # Install Pip Tools
-sudo pip install ansible virtualenv gitman
+sudo pip install ansible virtualenv gitman docker-compose
 
 # Install Python
 sudo add-apt-repository -y ppa:deadsnakes/ppa
