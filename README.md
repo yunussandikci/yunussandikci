@@ -8,7 +8,7 @@
 - ⚡   Fun fact: Scheduled Github Actions never works on time 
 
 ## 🚀 Recent Projects
-
+- [Go Pure API](https://github.com/yunussandikci/go-pure-api) - Golang REST API without any HTTP Framework!
 - [Cloudflare DDNS](https://github.com/yunussandikci/cloudflare-ddns) - Update your DNS records dynamically to make self-hosting much easier!
 - [Shareterm](https://github.com/yunussandikci/shareterm) - Share your terminal logs easily!
 - [Cron Backups](https://github.com/yunussandikci/cron-backups) - Automate your backup process!
