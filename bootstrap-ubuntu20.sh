@@ -109,6 +109,13 @@ sudo cp mkcert-v1.4.3-linux-amd64 /usr/local/bin/mkcert
 sudo chmod +x /usr/local/bin/mkcert
 rm -rf mkcert-v1.4.3-linux-amd64
 
+# Install RedisCLI
+wget http://download.redis.io/redis-stable.tar.gz
+tar -zxvf redis-stable.tar.gz
+(cd redis-stable && make)
+sudo mv redis-stable/src/redis-cli /usr/local/bin/redis-cli
+rm -rf redis*
+
 # Install Stern
 wget https://github.com/wercker/stern/releases/download/1.11.0/stern_linux_amd64
 sudo mv stern_linux_amd64 /usr/local/bin/stern
