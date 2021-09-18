@@ -7,6 +7,9 @@ sudo apt -y install zsh htop nano zip unzip curl wget git jq vim gnome-tweak-too
 ubuntu-drivers devices
 sudo ubuntu-drivers autoinstall
 
+# L2TP Support
+sudo apt install -y network-manager-l2tp network-manager-l2tp-gnome
+
 # Snaps
 sudo snap install flock-chat
 sudo snap install spotify
@@ -25,8 +28,10 @@ sudo snap install code --classic
 sudo snap install pycharm-professional --classic
 sudo snap install goland --classic
 
-# L2TP
-sudo apt install -y network-manager-l2tp network-manager-l2tp-gnome
+# Install Github Desktop
+wget https://github.com/shiftkey/desktop/releases/download/release-2.9.3-linux1/GitHubDesktop-linux-2.9.3-linux1.deb
+sudo dkpg -i GitHubDesktop-linux-2.9.3-linux1.deb
+rm GitHubDesktop-linux-2.9.3-linux1.deb
 
 # Install OhMyZsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
