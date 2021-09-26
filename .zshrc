@@ -14,8 +14,8 @@ help() { curl cheat.sh/${1}; };
 # Genearte SSH Key
 generate_sshkey() { ssh-keygen -t rsa -b 4096 -N '' -f ~/.ssh/id_rsa; cat ~/.ssh/id_rsa.pub }
 
-# Refresh Kubectl Config
-refresh_kubeconfig() { export KUBECONFIG="~/.kube/config" }
+# Kubernetes Get Decoded Secret
+get_decoded_secret() { kubectl get secret ${1} -o json | jq '.data | map_values(@base64d)' }
 
 # Create K8s Cluster with Nginx Controller
 create_cluster() {
