@@ -41,6 +41,7 @@ nodes:
     protocol: TCP
 EOF
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/kind/deploy.yaml
+sleep 20
 kubectl wait --namespace ingress-nginx --for=condition=ready pod --selector=app.kubernetes.io/component=controller --timeout=120s
 }
 
@@ -49,6 +50,7 @@ destroy_cluster() {
     kind delete cluster --name test
 }
 
+# Resets Intellij Applications
 reset_intellij() {
     rm -rf ~/.java/.userPrefs/prefs.xml
     rm -rf ~/.java/.userPrefs/jetbrains/prefs.xml
@@ -57,3 +59,4 @@ reset_intellij() {
         rm -rf ~/.config/JetBrains/${PRD}*/options/other.xml
     done
 }
+
