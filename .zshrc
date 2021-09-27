@@ -55,8 +55,8 @@ reset_intellij() {
     rm -rf ~/.java/.userPrefs/prefs.xml
     rm -rf ~/.java/.userPrefs/jetbrains/prefs.xml
     for PRD in IntelliJIdea CLion PhpStorm GoLand PyCharm WebStorm Rider DataGrip RubyMine AppCode; do	
-        rm -rf ~/.config/JetBrains/${PRD}*/eval/
-        rm -rf ~/.config/JetBrains/${PRD}*/options/other.xml
+        rm -rf ~/.config/JetBrains/${PRD}/eval/
+        rm -rf ~/.config/JetBrains/${PRD}/options/other.xml
     done
 }
 
