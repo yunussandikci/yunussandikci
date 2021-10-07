@@ -29,9 +29,9 @@ sudo snap install pycharm-professional --classic
 sudo snap install goland --classic
 
 # Install Github Desktop
-wget https://github.com/shiftkey/desktop/releases/download/release-2.9.3-linux1/GitHubDesktop-linux-2.9.3-linux1.deb
-sudo dkpg -i GitHubDesktop-linux-2.9.3-linux1.deb
-rm GitHubDesktop-linux-2.9.3-linux1.deb
+wget https://github.com/shiftkey/desktop/releases/download/release-2.9.3-linux3/GitHubDesktop-linux-2.9.3-linux3.deb
+sudo dpkg -i GitHubDesktop-linux-2.9.3-linux3.deb
+rm GitHubDesktop-linux-2.9.3-linux3.deb
 
 # Install OhMyZsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -57,7 +57,7 @@ sudo apt update
 sudo apt install -y python3.6 python3.6-dev
 
 # Install Kubectl
-wget "https://storage.googleapis.com/kubernetes-release/release/v1.15.11/bin/linux/amd64/kubectl"
+wget "https://storage.googleapis.com/kubernetes-release/release/v1.20.5/bin/linux/amd64/kubectl"
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 rm -rf kubectl
 
@@ -122,9 +122,10 @@ sudo mv redis-stable/src/redis-cli /usr/local/bin/redis-cli
 rm -rf redis*
 
 # Install Stern
-wget https://github.com/wercker/stern/releases/download/1.11.0/stern_linux_amd64
-sudo mv stern_linux_amd64 /usr/local/bin/stern
-chmod +x /usr/local/bin/stern
+wget https://github.com/stern/stern/releases/download/v1.20.1/stern_1.20.1_linux_amd64.tar.gz
+tar -zxvf stern_1.20.1_linux_amd64.tar.gz
+sudo mv stern_1.20.1_linux_amd64/stern /usr/local/bin/stern
+rm -rf stern*
 
 # Install Telepresence
 wget https://s3.amazonaws.com/datawire-static-files/telepresence/telepresence-0.109.tar.gz
