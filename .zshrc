@@ -17,6 +17,15 @@ generate_sshkey() { ssh-keygen -t rsa -b 4096 -N '' -f ~/.ssh/id_rsa; cat ~/.ssh
 # Kubernetes Get Decoded Secret
 get_decoded_secret() { kubectl get secret ${1} -o json | jq '.data | map_values(@base64d)' }
 
+# Export All Secrets in a Kubernetes Cluster
+export_secrets() {
+  secrets=$(kubectl get secret | grep Opaque | awk '{print $1}')
+  echo $secrets | while read line; do
+    echo "Exporting: ${line}"
+    kubectl get secret $line -o yaml > $line.yaml
+  done
+}
+
 # Create K8s Cluster with Nginx Controller
 create_cluster() {
     cat <<EOF | kind create cluster --config=-
