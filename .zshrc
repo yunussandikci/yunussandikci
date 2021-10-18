@@ -19,8 +19,7 @@ get_decoded_secret() { kubectl get secret ${1} -o json | jq '.data | map_values(
 
 # Export All Secrets in a Kubernetes Cluster
 export_secrets() {
-  secrets=$(kubectl get secret | grep Opaque | awk '{print $1}')
-  echo $secrets | while read line; do
+  kubectl get secret | grep Opaque | awk '{print $1}' | while read line; do
     echo "Exporting: ${line}"
     kubectl get secret $line -o yaml > $line.yaml
   done
