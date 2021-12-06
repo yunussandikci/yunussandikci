@@ -35,4 +35,4 @@ Feel free to contact me about anything I can help or collaborate on projects!<br
 [![Linkedin Badge](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yunussandikci)
 [![Mail Badge](https://img.shields.io/badge/email-c14438?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:yunussandi@outlook.com)](mailto:yunussandikic@outlook.com)
   
-![Yunus's GitHub stats](https://github-readme-stats.vercel.app/api?username=yunussandikci&count_private=true&show_icons=true)
+![Yunus's GitHub stats](https://github-readme-stats.vercel.app/api?username=yunussandikci&count_private=true&show_icons=true&include_all_commits=true)
