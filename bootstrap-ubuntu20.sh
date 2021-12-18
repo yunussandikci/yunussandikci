@@ -131,7 +131,7 @@ rm -rf stern*
 wget https://s3.amazonaws.com/datawire-static-files/telepresence/telepresence-0.109.tar.gz
 tar -xzvf telepresence-0.109.tar.gz
 sudo mv telepresence-0.109/bin/telepresence /usr/local/bin/telepresence
-sudo mv telepresence-0.109/libexec/sshuttle-telepresence /usr/local/bin/libexec/sshuttle-telepresence
+sudo mv telepresence-0.109/libexec/sshuttle-telepresence /usr/local/bin/sshuttle-telepresence
 rm -rf telepresence*
 
 # Switch to Pipewire
