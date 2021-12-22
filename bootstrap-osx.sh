@@ -28,7 +28,6 @@ brew install mysql
 brew install awscli
 brew install kubectx
 brew install kubectl
-brew install terraform
 brew install stern
 brew install helm
 brew install kind
@@ -42,6 +41,11 @@ echo "[ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases" >> .zshrc
 
 # Install Python 3.6.15 with PyEnv
 pyenv install 3.6.15
+
+# Install Terraform
+wget https://releases.hashicorp.com/terraform/1.1.2/terraform_1.1.2_darwin_amd64.zip
+unzip terraform_1.1.2_darwin_amd64.zip
+sudo mv terraform /usr/local/bin/terraform
 
 # Install Telepresence
 wget https://s3.amazonaws.com/datawire-static-files/telepresence/telepresence-0.109.tar.gz
