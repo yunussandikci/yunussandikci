@@ -24,7 +24,7 @@ brew install htop wget jq watch gettext
 brew install pyenv
 brew install --cask macfuse
 brew install gromgit/fuse/sshfs-mac
-brew install mysql-client
+brew install mysql
 brew install awscli
 brew install kubectx
 brew install kubectl
