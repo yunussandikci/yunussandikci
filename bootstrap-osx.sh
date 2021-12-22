@@ -11,6 +11,9 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 # Install Brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# Install Rosetta 
+softwareupdate --install-rosetta
+
 # Install Kubectl Aliases
 wget https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases
 echo "[ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases" >> .zshrc
