@@ -47,6 +47,11 @@ wget https://releases.hashicorp.com/terraform/1.1.2/terraform_1.1.2_darwin_amd64
 unzip terraform_1.1.2_darwin_amd64.zip
 sudo mv terraform /usr/local/bin/terraform
 
+# Install Terragrunt
+wget //github.com/gruntwork-io/terragrunt/releases/download/v0.35.16/terragrunt_darwin_amd64
+chmod +x terragrunt_darwin_amd64
+sudo mv terragrunt_darwin_amd64 /usr/local/bin/terragrunt
+
 # Install Telepresence
 wget https://s3.amazonaws.com/datawire-static-files/telepresence/telepresence-0.109.tar.gz
 tar -xzvf telepresence-0.109.tar.gz
