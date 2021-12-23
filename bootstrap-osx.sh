@@ -34,6 +34,7 @@ brew install kind
 brew install vault
 brew install fluxcd/tap/flux
 brew install go
+brew install mysql
 
 # Install Kubectl Aliases
 wget https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases
