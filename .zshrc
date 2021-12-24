@@ -1,4 +1,4 @@
-# MacOS Word Cmd+Left/Right Fix
+# MacOS Word Option+Left/Right Fix
 bindkey "\e\e[D" backward-word
 bindkey "\e\e[C" forward-word
 
