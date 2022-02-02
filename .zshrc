@@ -51,3 +51,11 @@ kubectl wait --namespace ingress-nginx --for=condition=ready pod --selector=app.
 destroy_cluster() {
     kind delete cluster --name test
 }
+
+fix_docker() {
+  nc -U ~/Library/Containers/com.docker.docker/Data/debug-shell.sock <<END
+sysctl fs.inotify.max_user_watches=1048576
+sysctl fs.inotify.max_user_instances=8192
+exit
+END
+}
