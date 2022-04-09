@@ -14,11 +14,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 # Install Rosetta 
 softwareupdate --install-rosetta
 
-# Increase Kernel Max Files Descriptor
-sudo sysctl -w kern.maxfiles=5242880
-sudo sysctl -w kern.maxfilesperproc=524288
-ulimit -n 10240
-
 # Install Common Packages and CLIs
 brew install htop wget jq watch gettext
 brew install pyenv
@@ -44,8 +39,8 @@ echo "[ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases" >> .zshrc
 pyenv install 3.6.15
 
 # Install Terraform
-wget https://releases.hashicorp.com/terraform/1.1.2/terraform_1.1.2_darwin_amd64.zip
-unzip terraform_1.1.2_darwin_amd64.zip
+wget https://releases.hashicorp.com/terraform/1.1.8/terraform_1.1.8_darwin_amd64.zip
+unzip terraform_1.1.8_darwin_amd64.zip
 sudo mv terraform /usr/local/bin/terraform
 
 # Install Terragrunt
