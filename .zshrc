@@ -19,6 +19,11 @@ export CFLAGS="-I$(brew --prefix openssl@1.1)/include"
 export LDFLAGS="-L$(brew --prefix)/lib -L$(brew --prefix openssl@1.1)/lib"
 export CPPFLAGS="-I$(brew --prefix)/include -I$(brew --prefix openssl@1.1)/include"
 
+# Fix Ansible Issue
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY="YES"
+
+# Fix Terraform AWS Provider Initialization 
+export GODEBUG=asyncpreemptoff=1
 
 create_cluster() {
     cat <<EOF | kind create cluster --config=-
@@ -52,10 +57,7 @@ destroy_cluster() {
     kind delete cluster --name test
 }
 
-fix_docker() {
-  nc -U ~/Library/Containers/com.docker.docker/Data/debug-shell.sock <<END
-sysctl fs.inotify.max_user_watches=1048576
-sysctl fs.inotify.max_user_instances=8192
-exit
-END
+kubesecret() {
+    kubectl get secret $1 -o json | jq '.data | map_values(@base64d)'
 }
+
