@@ -30,21 +30,28 @@ brew install vault
 brew install fluxcd/tap/flux
 brew install go
 brew install mysql
+brew install ca-certificates
+brew install rclone
+brew install mkcert
+brew install kubeseal
+brew install gh
+brew install yq
+brew install watch
+brew install bash
+brew install jq
+brew install telepresence
 
 # Install Kubectl Aliases
 wget https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases
 echo "[ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases" >> .zshrc
 
-# Install Python 3.6.15 with PyEnv
-pyenv install 3.6.15
-
 # Install Terraform
-wget https://releases.hashicorp.com/terraform/1.1.8/terraform_1.1.8_darwin_amd64.zip
-unzip terraform_1.1.8_darwin_amd64.zip
+wget https://releases.hashicorp.com/terraform/1.5.2/terraform_1.5.2_darwin_amd64.zip
+unzip terraform_1.5.2_darwin_amd64.zip
 sudo mv terraform /usr/local/bin/terraform
 
 # Install Terragrunt
-wget //github.com/gruntwork-io/terragrunt/releases/download/v0.35.16/terragrunt_darwin_amd64
+wget //github.com/gruntwork-io/terragrunt/releases/download/v0.48.0/terragrunt_darwin_amd64
 chmod +x terragrunt_darwin_amd64
 sudo mv terragrunt_darwin_amd64 /usr/local/bin/terragrunt
 
