@@ -8,7 +8,7 @@
 - ⚡   Fun fact: Scheduled Github Actions never works on time
 
 ## 🚀 Recent Projects
-- [SQueueLite Go](https://github.com/yunussandikci/squeuelite-go) - SQLite based message queue implementation with the support of Deduplication, Priority and VisibilityTimeout in Go!
+- [DBQueue Go](https://github.com/yunussandikci/dbqueue-go) - Database based lightweight FIFO queue implementation with the support of Deduplication, Priority and VisibilityTimeout in Go
 - [Go Pure API](https://github.com/yunussandikci/go-pure-api) - Golang REST API without any HTTP Framework!
 - [Cloudflare DDNS](https://github.com/yunussandikci/cloudflare-ddns) - Update your DNS records dynamically to make self-hosting much easier!
 - [Shareterm](https://github.com/yunussandikci/shareterm) - Share your terminal logs easily!
