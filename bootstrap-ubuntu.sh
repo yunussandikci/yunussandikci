@@ -1,14 +1,11 @@
 # Main Utils
 sudo apt -y update
 sudo apt -y upgrade
-sudo apt -y install zsh htop nano zip unzip curl wget git jq python3-pip libnss3-tools libmysqlclient-dev 
+sudo apt -y install zsh htop nano zip unzip curl wget git jq python3-pip libnss3-tools libmysqlclient-dev network-manager-l2tp network-manager-l2tp-gnome
 
 # Drivers
 ubuntu-drivers devices
 sudo ubuntu-drivers autoinstall
-
-# L2TP Support
-sudo apt install -y network-manager-l2tp network-manager-l2tp-gnome
 
 # Snaps
 sudo snap install flock-chat
