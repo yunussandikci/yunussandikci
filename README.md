@@ -7,14 +7,14 @@
 - 😄  Pronouns: he/him
 - ⚡   Fun fact: Scheduled Github Actions never works on time
 
-## 🚀 Recent Projects
-- [DBQueue Go](https://github.com/yunussandikci/dbqueue-go) - Database based lightweight FIFO queue implementation with the support of Deduplication, Priority and VisibilityTimeout in Go
+## 🚀 Recent Open-Source Projects
+- [docker-wordpress-sqlite](https://github.com/yunussandikci/together) - Always up-to-date WordPress Docker images with built-in SQLite support.
+- [ArduinoMessageBus](https://github.com/yunussandikci/ArduinoMessageBus) - Simple message-bus implementation for topic based communication on Arduino like devices.  
+- [DBQueue Go](https://github.com/yunussandikci/dbqueue-go) - Database based lightweight FIFO queue implementation with the support with SQS like features; Deduplication, Priority and VisibilityTimeout in Go
 - [Go Pure API](https://github.com/yunussandikci/go-pure-api) - Golang REST API without any HTTP Framework!
 - [Cloudflare DDNS](https://github.com/yunussandikci/cloudflare-ddns) - Update your DNS records dynamically to make self-hosting much easier!
 - [Shareterm](https://github.com/yunussandikci/shareterm) - Share your terminal logs easily!
 - [Cron Backups](https://github.com/yunussandikci/cron-backups) - Automate your backup process!
-- [Together](https://github.com/yunussandikci/together) - Peer-to-Peer Room Based video meetings!  
-- [Turkey Covid-19 Bot](https://github.com/yunussandikci/covid19-turkey-bot) - Telegram bot and channel for tracking covid19 cases in Turkey. 
 
 ## ⭐️ Technologies I like
 <p align="left">
