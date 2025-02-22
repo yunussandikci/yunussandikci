@@ -8,7 +8,7 @@
 - ⚡   Fun fact: Scheduled Github Actions never works on time
 
 ## 🚀 Recent Open-Source Projects
-- [docker-wordpress-sqlite](https://github.com/yunussandikci/together) - Always up-to-date WordPress Docker images with built-in SQLite support.
+- [docker-wordpress-sqlite](https://github.com/yunussandikci/docker-wordpress-sqlite) - Always up-to-date WordPress Docker images with built-in SQLite support.
 - [ArduinoMessageBus](https://github.com/yunussandikci/ArduinoMessageBus) - Simple message-bus implementation for topic based communication on Arduino like devices.  
 - [DBQueue Go](https://github.com/yunussandikci/dbqueue-go) - Database based lightweight FIFO queue implementation with the support with SQS like features; Deduplication, Priority and VisibilityTimeout in Go
 - [Go Pure API](https://github.com/yunussandikci/go-pure-api) - Golang REST API without any HTTP Framework!
